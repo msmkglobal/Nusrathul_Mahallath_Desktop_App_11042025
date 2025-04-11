@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Receipt" targetNamespace="http://tempuri.org/Ds_Receipt.xsd" xmlns:mstns="http://tempuri.org/Ds_Receipt.xsd" xmlns="http://tempuri.org/Ds_Receipt.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Receipt" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_Receipt" msprop:Generator_UserDSName="Ds_Receipt">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DS_RECEIPT" msprop:Generator_TableClassName="DS_RECEIPTDataTable" msprop:Generator_TableVarName="tableDS_RECEIPT" msprop:Generator_TablePropName="DS_RECEIPT" msprop:Generator_RowDeletingName="DS_RECEIPTRowDeleting" msprop:Generator_RowChangingName="DS_RECEIPTRowChanging" msprop:Generator_RowEvHandlerName="DS_RECEIPTRowChangeEventHandler" msprop:Generator_RowDeletedName="DS_RECEIPTRowDeleted" msprop:Generator_UserTableName="DS_RECEIPT" msprop:Generator_RowChangedName="DS_RECEIPTRowChanged" msprop:Generator_RowEvArgName="DS_RECEIPTRowChangeEvent" msprop:Generator_RowClassName="DS_RECEIPTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RXNUMBER" msprop:Generator_ColumnVarNameInTable="columnRXNUMBER" msprop:Generator_ColumnPropNameInRow="RXNUMBER" msprop:Generator_ColumnPropNameInTable="RXNUMBERColumn" msprop:Generator_UserColumnName="RXNUMBER" type="xs:string" minOccurs="0" />
+              <xs:element name="RXDATE" msprop:Generator_ColumnVarNameInTable="columnRXDATE" msprop:Generator_ColumnPropNameInRow="RXDATE" msprop:Generator_ColumnPropNameInTable="RXDATEColumn" msprop:Generator_UserColumnName="RXDATE" type="xs:string" minOccurs="0" />
+              <xs:element name="RXTYPE" msprop:Generator_ColumnVarNameInTable="columnRXTYPE" msprop:Generator_ColumnPropNameInRow="RXTYPE" msprop:Generator_ColumnPropNameInTable="RXTYPEColumn" msprop:Generator_UserColumnName="RXTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="RXNAME" msprop:Generator_ColumnVarNameInTable="columnRXNAME" msprop:Generator_ColumnPropNameInRow="RXNAME" msprop:Generator_ColumnPropNameInTable="RXNAMEColumn" msprop:Generator_UserColumnName="RXNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RXRID" msprop:Generator_ColumnVarNameInTable="columnRXRID" msprop:Generator_ColumnPropNameInRow="RXRID" msprop:Generator_ColumnPropNameInTable="RXRIDColumn" msprop:Generator_UserColumnName="RXRID" type="xs:string" minOccurs="0" />
+              <xs:element name="RXCMNTID" msprop:Generator_ColumnVarNameInTable="columnRXCMNTID" msprop:Generator_ColumnPropNameInRow="RXCMNTID" msprop:Generator_ColumnPropNameInTable="RXCMNTIDColumn" msprop:Generator_UserColumnName="RXCMNTID" type="xs:string" minOccurs="0" />
+              <xs:element name="RXACCOUNT" msprop:Generator_ColumnVarNameInTable="columnRXACCOUNT" msprop:Generator_ColumnPropNameInRow="RXACCOUNT" msprop:Generator_ColumnPropNameInTable="RXACCOUNTColumn" msprop:Generator_UserColumnName="RXACCOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="RXAMOUNT" msprop:Generator_ColumnVarNameInTable="columnRXAMOUNT" msprop:Generator_ColumnPropNameInRow="RXAMOUNT" msprop:Generator_ColumnPropNameInTable="RXAMOUNTColumn" msprop:Generator_UserColumnName="RXAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="RXMODE" msprop:Generator_ColumnVarNameInTable="columnRXMODE" msprop:Generator_ColumnPropNameInRow="RXMODE" msprop:Generator_ColumnPropNameInTable="RXMODEColumn" msprop:Generator_UserColumnName="RXMODE" type="xs:string" minOccurs="0" />
+              <xs:element name="RXDETAILS" msprop:Generator_ColumnVarNameInTable="columnRXDETAILS" msprop:Generator_ColumnPropNameInRow="RXDETAILS" msprop:Generator_ColumnPropNameInTable="RXDETAILSColumn" msprop:Generator_UserColumnName="RXDETAILS" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

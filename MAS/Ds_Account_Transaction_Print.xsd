@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Account_Transaction_Print" targetNamespace="http://tempuri.org/Ds_Account_Transaction_Print.xsd" xmlns:mstns="http://tempuri.org/Ds_Account_Transaction_Print.xsd" xmlns="http://tempuri.org/Ds_Account_Transaction_Print.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Account_Transaction_Print" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Ds_Account_Transaction_Print" msprop:Generator_UserDSName="Ds_Account_Transaction_Print">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DS_ACCOUNT_TRANSACTION_PRINT" msprop:Generator_TableClassName="DS_ACCOUNT_TRANSACTION_PRINTDataTable" msprop:Generator_TableVarName="tableDS_ACCOUNT_TRANSACTION_PRINT" msprop:Generator_RowChangedName="DS_ACCOUNT_TRANSACTION_PRINTRowChanged" msprop:Generator_TablePropName="DS_ACCOUNT_TRANSACTION_PRINT" msprop:Generator_RowDeletingName="DS_ACCOUNT_TRANSACTION_PRINTRowDeleting" msprop:Generator_RowChangingName="DS_ACCOUNT_TRANSACTION_PRINTRowChanging" msprop:Generator_RowEvHandlerName="DS_ACCOUNT_TRANSACTION_PRINTRowChangeEventHandler" msprop:Generator_RowDeletedName="DS_ACCOUNT_TRANSACTION_PRINTRowDeleted" msprop:Generator_RowClassName="DS_ACCOUNT_TRANSACTION_PRINTRow" msprop:Generator_UserTableName="DS_ACCOUNT_TRANSACTION_PRINT" msprop:Generator_RowEvArgName="DS_ACCOUNT_TRANSACTION_PRINTRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TXID" msprop:Generator_ColumnVarNameInTable="columnTXID" msprop:Generator_ColumnPropNameInRow="TXID" msprop:Generator_ColumnPropNameInTable="TXIDColumn" msprop:Generator_UserColumnName="TXID" type="xs:string" minOccurs="0" />
+              <xs:element name="VOUCHERNO" msprop:Generator_ColumnVarNameInTable="columnVOUCHERNO" msprop:Generator_ColumnPropNameInRow="VOUCHERNO" msprop:Generator_ColumnPropNameInTable="VOUCHERNOColumn" msprop:Generator_UserColumnName="VOUCHERNO" type="xs:string" minOccurs="0" />
+              <xs:element name="TXTYPE" msprop:Generator_ColumnVarNameInTable="columnTXTYPE" msprop:Generator_ColumnPropNameInRow="TXTYPE" msprop:Generator_ColumnPropNameInTable="TXTYPEColumn" msprop:Generator_UserColumnName="TXTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCOUNTID" msprop:Generator_ColumnVarNameInTable="columnACCOUNTID" msprop:Generator_ColumnPropNameInRow="ACCOUNTID" msprop:Generator_ColumnPropNameInTable="ACCOUNTIDColumn" msprop:Generator_UserColumnName="ACCOUNTID" type="xs:string" minOccurs="0" />
+              <xs:element name="ACCOUNTNAME" msprop:Generator_ColumnVarNameInTable="columnACCOUNTNAME" msprop:Generator_ColumnPropNameInRow="ACCOUNTNAME" msprop:Generator_ColumnPropNameInTable="ACCOUNTNAMEColumn" msprop:Generator_UserColumnName="ACCOUNTNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="RID" msprop:Generator_ColumnVarNameInTable="columnRID" msprop:Generator_ColumnPropNameInRow="RID" msprop:Generator_ColumnPropNameInTable="RIDColumn" msprop:Generator_UserColumnName="RID" type="xs:string" minOccurs="0" />
+              <xs:element name="TXMODE" msprop:Generator_ColumnVarNameInTable="columnTXMODE" msprop:Generator_ColumnPropNameInRow="TXMODE" msprop:Generator_ColumnPropNameInTable="TXMODEColumn" msprop:Generator_UserColumnName="TXMODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TXAMOUNT" msprop:Generator_ColumnVarNameInTable="columnTXAMOUNT" msprop:Generator_ColumnPropNameInRow="TXAMOUNT" msprop:Generator_ColumnPropNameInTable="TXAMOUNTColumn" msprop:Generator_UserColumnName="TXAMOUNT" type="xs:string" minOccurs="0" />
+              <xs:element name="TXDETAILS" msprop:Generator_ColumnVarNameInTable="columnTXDETAILS" msprop:Generator_ColumnPropNameInRow="TXDETAILS" msprop:Generator_ColumnPropNameInTable="TXDETAILSColumn" msprop:Generator_UserColumnName="TXDETAILS" type="xs:string" minOccurs="0" />
+              <xs:element name="TXLOG" msprop:Generator_ColumnVarNameInTable="columnTXLOG" msprop:Generator_ColumnPropNameInRow="TXLOG" msprop:Generator_ColumnPropNameInTable="TXLOGColumn" msprop:Generator_UserColumnName="TXLOG" type="xs:string" minOccurs="0" />
+              <xs:element name="STATUS" msprop:Generator_ColumnVarNameInTable="columnSTATUS" msprop:Generator_ColumnPropNameInRow="STATUS" msprop:Generator_ColumnPropNameInTable="STATUSColumn" msprop:Generator_UserColumnName="STATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="TXDATE" msprop:Generator_ColumnVarNameInTable="columnTXDATE" msprop:Generator_ColumnPropNameInRow="TXDATE" msprop:Generator_ColumnPropNameInTable="TXDATEColumn" msprop:Generator_UserColumnName="TXDATE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

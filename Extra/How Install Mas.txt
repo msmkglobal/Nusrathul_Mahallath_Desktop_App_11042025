@@ -1,0 +1,16 @@
+Basic Requirement 
+
+1-SQL Server Client
+2-Dot Net Frame work 3.5 or 4
+3-Crystal report
+5-Windows Operating System Minimum Winxp Sp1 32bit
+
+
+Installation:
+
+1-Copy the MAS Setup file to your D: Drive
+2-Ensure Your setup Folder Name is MAS,if no Rename as"MAS"
+3-Click the stup button and Install
+4-While Installing the dialog box will appear choose the home directory "D:\MAS"
+
+

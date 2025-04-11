@@ -1,0 +1,6 @@
+﻿1>------ Build started: Project: MAS, Configuration: Debug Any CPU ------
+1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1635,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "WebCam_Capture". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+1>D:\MAHALLU\KANIYAPURAM\MAS\MAS\Frm_Passbook_Print.cs(20,33,20,56): warning CS0169: The field 'MAS.Frm_Passbook_Print.Obj_Account_Transaction' is never used
+1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(3240,5): warning MSB3187: Referenced assembly 'C:\Windows\assembly\GAC_64\log4net\1.2.10.0__692fbea5521e1304\log4net.dll' targets a different processor than the application.
+1>  MAS -> D:\MAHALLU\KANIYAPURAM\MAS\MAS\bin\Debug\MAS.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

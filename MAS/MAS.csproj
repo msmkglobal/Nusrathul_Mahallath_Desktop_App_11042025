@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F275CF38-CB47-4B56-BBE3-6A97EF406616}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MAS</RootNamespace>
+    <AssemblyName>MAS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>0E6722152DAE42CA710B3DE4B9E19783502023AC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <SignManifests>false</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ApplicationIcon>Product Logo.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://www.aptorasoftasia.com/mas/updates/</UpdateUrl>
+    <SupportUrl>http://www.nusrathulmahallath.com</SupportUrl>
+    <ProductName>MAS</ProductName>
+    <PublisherName>Nusrathulmahallath</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>C:\MAS</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebCam_Capture, Version=1.0.4141.35576, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\BACK BENJ\Dll Files\WebCam_Capture.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Idmaster.cs" />
+    <Compile Include="Class_Printer.cs" />
+    <Compile Include="Class_Receipt.cs" />
+    <Compile Include="Cls_Account_Transaction.cs" />
+    <Compile Include="Cls_Committee_Master.cs" />
+    <Compile Include="Cls_Committee_Member.cs" />
+    <Compile Include="Cls_Common_search.cs" />
+    <Compile Include="Cls_Community_Master.cs" />
+    <Compile Include="Cls_Credit.cs" />
+    <Compile Include="Cls_Db.cs" />
+    <Compile Include="Cls_Debit.cs" />
+    <Compile Include="Cls_Education.cs" />
+    <Compile Include="Cls_Education_Master.cs" />
+    <Compile Include="Cls_Employee_Master.cs" />
+    <Compile Include="Cls_Food_Master.cs" />
+    <Compile Include="Cls_Job_Master.cs" />
+    <Compile Include="Cls_Lookup_Bridge.cs" />
+    <Compile Include="Cls_mahallumaster.cs" />
+    <Compile Include="Cls_Marriage.cs" />
+    <Compile Include="Cls_Marriage_Registration.cs" />
+    <Compile Include="Cls_Payment.cs" />
+    <Compile Include="Cls_Residence_Account.cs" />
+    <Compile Include="Cls_Residence_Master.cs" />
+    <Compile Include="Cls_User_Account.cs" />
+    <Compile Include="Crv_Account_Transaction_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Account_Transaction_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Community_Election_List_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Community_Election_List_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Passbook_Community_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Passbook_Community_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Passbook_Frontpage_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Passbook_Frontpage_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Receipt_Pageheading.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Receipt_Pageheading.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Residence_Account_Headding_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Residence_Account_Headding_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crv_Residence_Account_Transaction_Print.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Crv_Residence_Account_Transaction_Print.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Account_Transaction_Print.cs">
+      <DependentUpon>Ds_Account_Transaction_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Account_Transaction_Print.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Account_Transaction_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Community_Election_List_Print.cs">
+      <DependentUpon>Ds_Community_Election_List_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Community_Election_List_Print.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Community_Election_List_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Passbook_Community_Print.cs">
+      <DependentUpon>Ds_Passbook_Community_Print.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ds_Passbook_Community_Print.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Passbook_Community_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Passbook_Frontpage_Print.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Passbook_Frontpage_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Residence_Account_Print.cs">
+      <DependentUpon>Ds_Residence_Account_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ds_Residence_Account_Print.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Residence_Account_Print.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Commitee_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Commitee_Master.designer.cs">
+      <DependentUpon>Frm_Commitee_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Commitee_Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Commitee_Member.Designer.cs">
+      <DependentUpon>Frm_Commitee_Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Committee_Lokkup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Committee_Lokkup.Designer.cs">
+      <DependentUpon>Frm_Committee_Lokkup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Community.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Community.Designer.cs">
+      <DependentUpon>Frm_Community.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_community_lookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_community_lookup.Designer.cs">
+      <DependentUpon>Frm_community_lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Credit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Credit.Designer.cs">
+      <DependentUpon>Frm_Credit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Dashboard.Designer.cs">
+      <DependentUpon>Frm_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Debit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Debit.Designer.cs">
+      <DependentUpon>Frm_Debit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Education.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Education.Designer.cs">
+      <DependentUpon>Frm_Education.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Employee.Designer.cs">
+      <DependentUpon>Frm_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Family_Tree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Family_Tree.designer.cs">
+      <DependentUpon>Frm_Family_Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Food.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Food.Designer.cs">
+      <DependentUpon>Frm_Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Job.Designer.cs">
+      <DependentUpon>Frm_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Mahallu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Mahallu.Designer.cs">
+      <DependentUpon>Frm_Mahallu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Marriage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Marriage.Designer.cs">
+      <DependentUpon>Frm_Marriage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Marriage_Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Marriage_Registration.Designer.cs">
+      <DependentUpon>Frm_Marriage_Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MAS_MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MAS_MDI.Designer.cs">
+      <DependentUpon>Frm_MAS_MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Passbook_Print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Passbook_Print.Designer.cs">
+      <DependentUpon>Frm_Passbook_Print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Payment.designer.cs">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Printer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Printer.Designer.cs">
+      <DependentUpon>Frm_Printer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Print_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Print_Test.Designer.cs">
+      <DependentUpon>Frm_Print_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Receipt.Designer.cs">
+      <DependentUpon>Frm_Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reports.Designer.cs">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Residence_Master.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Residence_Master.Designer.cs">
+      <DependentUpon>Frm_Residence_Master.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Resi_lookup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Resi_lookup.Designer.cs">
+      <DependentUpon>Frm_Resi_lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Search.Designer.cs">
+      <DependentUpon>Frm_Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_User_Interface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_User_Interface.Designer.cs">
+      <DependentUpon>Frm_User_Interface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Crv_Account_Transaction_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Account_Transaction_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Community_Election_List_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Community_Election_List_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Passbook_Community_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Passbook_Community_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Passbook_Frontpage_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Passbook_Frontpage_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Receipt_Pageheading.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Receipt_Pageheading.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Residence_Account_Headding_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Residence_Account_Headding_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crv_Residence_Account_Transaction_Print.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Crv_Residence_Account_Transaction_Print.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Commitee_Master.resx">
+      <DependentUpon>Frm_Commitee_Master.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Commitee_Member.resx">
+      <DependentUpon>Frm_Commitee_Member.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Committee_Lokkup.resx">
+      <DependentUpon>Frm_Committee_Lokkup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Community.resx">
+      <DependentUpon>Frm_Community.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_community_lookup.resx">
+      <DependentUpon>Frm_community_lookup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Credit.resx">
+      <DependentUpon>Frm_Credit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Dashboard.resx">
+      <DependentUpon>Frm_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Debit.resx">
+      <DependentUpon>Frm_Debit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Education.resx">
+      <DependentUpon>Frm_Education.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Employee.resx">
+      <DependentUpon>Frm_Employee.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Family_Tree.resx">
+      <DependentUpon>Frm_Family_Tree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Food.resx">
+      <DependentUpon>Frm_Food.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Job.resx">
+      <DependentUpon>Frm_Job.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Mahallu.resx">
+      <DependentUpon>Frm_Mahallu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Marriage.resx">
+      <DependentUpon>Frm_Marriage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Marriage_Registration.resx">
+      <DependentUpon>Frm_Marriage_Registration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MAS_MDI.resx">
+      <DependentUpon>Frm_MAS_MDI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Passbook_Print.resx">
+      <DependentUpon>Frm_Passbook_Print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Payment.resx">
+      <DependentUpon>Frm_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Printer.resx">
+      <DependentUpon>Frm_Printer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Print_Test.resx">
+      <DependentUpon>Frm_Print_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Receipt.resx">
+      <DependentUpon>Frm_Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reports.resx">
+      <DependentUpon>Frm_Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Residence_Master.resx">
+      <DependentUpon>Frm_Residence_Master.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Resi_lookup.resx">
+      <DependentUpon>Frm_Resi_lookup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Search.resx">
+      <DependentUpon>Frm_Search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_User_Interface.resx">
+      <DependentUpon>Frm_User_Interface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_User_Account.resx">
+      <DependentUpon>Frm_User_Account.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test search.resx">
+      <DependentUpon>test search.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Ds_Account_Transaction_Print.xsc">
+      <DependentUpon>Ds_Account_Transaction_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Account_Transaction_Print.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Account_Transaction_Print.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Account_Transaction_Print.xss">
+      <DependentUpon>Ds_Account_Transaction_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Community_Election_List_Print.xsc">
+      <DependentUpon>Ds_Community_Election_List_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Community_Election_List_Print.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Community_Election_List_Print.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Community_Election_List_Print.xss">
+      <DependentUpon>Ds_Community_Election_List_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Residence_Account_Print.xsc">
+      <DependentUpon>Ds_Residence_Account_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Residence_Account_Print.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Residence_Account_Print.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Residence_Account_Print.xss">
+      <DependentUpon>Ds_Residence_Account_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Frm_User_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_User_Account.Designer.cs">
+      <DependentUpon>Frm_User_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test search.Designer.cs">
+      <DependentUpon>test search.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.4.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Product Logo.ico" />
+    <None Include="Ds_Passbook_Community_Print.xsc">
+      <DependentUpon>Ds_Passbook_Community_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Passbook_Community_Print.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Passbook_Community_Print.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Passbook_Community_Print.xss">
+      <DependentUpon>Ds_Passbook_Community_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Passbook_Frontpage_Print.xsc">
+      <DependentUpon>Ds_Passbook_Frontpage_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Ds_Passbook_Frontpage_Print.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Passbook_Frontpage_Print.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Ds_Passbook_Frontpage_Print.xss">
+      <DependentUpon>Ds_Passbook_Frontpage_Print.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
