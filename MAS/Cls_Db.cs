@@ -13,10 +13,10 @@ namespace MAS
     {
        
         //Development 
-        //SqlConnection con = new SqlConnection("Data Source=DESKTOP-BQH6DVK\\SQLEXPRESS;Initial Catalog=TVMPPMJ2018;Persist Security Info=True;User ID=sa;Password=dbadmin@2025");
+        SqlConnection con = new SqlConnection("Data Source=DESKTOP-BQH6DVK\\SQLEXPRESS;Initial Catalog=TVMPPMJ2018;Persist Security Info=True;User ID=sa;Password=dbadmin@2025");
 
         //TVMPPMJ KANIYAPURAM PRODUCTION DB
-        SqlConnection con = new SqlConnection("Server=206.189.140.214;Initial Catalog=KL1M1_PPMJ2025;Persist Security Info=True;User ID=sa;Password=dbadmin@2025");
+        //SqlConnection con = new SqlConnection("Server=206.189.140.214;Initial Catalog=KL1M1_PPMJ2025;Persist Security Info=True;User ID=sa;Password=dbadmin@2025");
 
         public int Execute_Non(SqlCommand cmd)//for isert and update
         {
